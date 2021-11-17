@@ -36,10 +36,10 @@ void Push(int item,Stack S) {
 int Pop(Stack S) {
 	
 	Stack FirstCell; 
-		int TopElem;
-		if (IsEmpty(S)) {
-		printf("堆栈空");
-		// return NULL; 
+	int TopElem;
+	if (IsEmpty(S)) {
+	printf("堆栈空");
+	// return NULL; 
 	} else {
 		FirstCell = S->Next;
 		S->Next = FirstCell->Next;//该操作完成删除节点
